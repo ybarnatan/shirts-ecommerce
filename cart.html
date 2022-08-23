@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importar Font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- importar CSS-->
+    <link rel='stylesheet' href='styles.css'> 
+
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+
+<!--    Header + Navbar starts--> 
+<section id="header">
+    <a href="#"> <img src="img/logo.jpg" class="logo"> </a>
+
+    <div>
+        <ul id="navbar">
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="shop.html"> Shop </a> </li>
+            <li> <a href="blog.html"> Blog </a> </li>
+            <li> <a  href="about.html"> About </a> </li>
+            <li> <a  href="contact.html"> Contact </a> </li>
+            <li id="lg-bag"> <a class='active' href="cart.html"> <i class="fas fa-shopping-bag"></i> </a> </li>
+            <a href="#" id="close"> <i class="fas fa-times"> </i>  </a>
+        </ul>
+    </div>
+
+    <div id="mobile">  <!-- hamburger menu escondido a menos que lo indique la media query -->
+        <a href="cart.html"> <i class="fas fa-shopping-bag"></i> </a> 
+        <i id="bar" class="fas fa-outdent"> </i>
+    </div>
+
+</section>
+<!--    Header + Navbar ends--> 
+
+
+<!--    Hero starts--> 
+<section id="page-header" class="about-header">
+    <h2>#Cart</h2> 
+    <p> Add your coupons and   </p>
+</section>
+<!--  Hero ends--> 
+
+
+<!-- Cart starts-->
+
+<section id="cart" class="section-p1">
+<table width="100%">
+<thead>
+    <tr>
+        <td> Remove </td>
+        <td> Image </td>
+        <td> Product </td>
+        <td> Price </td>
+        <td> Quantity </td>
+        <td> Subtotal </td>
+    </tr>
+</thead>
+
+<tbody> 
+    <tr>   <!--one row of the table.--> 
+        <td> <a href ='#'> <i class="far fa-times-circle"> </i>  </a> </td> <!--remove icon--> 
+        <td> <img src="img/products/nufc.png"> </td> <!--photo--> 
+        <td> NUFC first kit </td> <!--description--> 
+        <td> $59.90</td> <!--price--> 
+        <td> <input type="number" value="1">  </td> <!--n of items--> 
+        <td> $59.90</td>  <!--subtotal--> 
+    </tr>
+
+    <tr>   <!--one row of the table.--> 
+        <td> <a href ='#'> <i class="far fa-times-circle"> </i>  </a> </td> <!--remove icon--> 
+        <td> <img src="img/products/chelsea.png"> </td> <!--photo--> 
+        <td> Chelsea first kit </td> <!--description--> 
+        <td> $...</td> <!--price--> 
+        <td> <input type="number" value="1">  </td> <!--n of items--> 
+        <td> $...</td>  <!--subtotal--> 
+    </tr>
+
+    <tr>   <!--one row of the table.--> 
+        <td> <a href ='#'> <i class="far fa-times-circle"> </i>  </a> </td> <!--remove icon--> 
+        <td> <img src="img/products/liverpool.jpg"> </td> <!--photo--> 
+        <td> Liverpool first kit </td> <!--description--> 
+        <td> $...</td> <!--price--> 
+        <td> <input type="number" value="1">  </td> <!--n of items--> 
+        <td> $...</td>  <!--subtotal--> 
+    </tr>
+
+</tbody>
+
+
+</table>
+
+</section>
+
+<!-- Cart ends-->
+
+
+
+<!-- Add coupon starts-->
+<section id="cart-add" class="section-p1">
+    
+    <div id="coupon">  <!-- Agregar cupones-->
+
+        <h3> Apply coupons </h3>
+        <div> 
+            <input type="text" placeholder="Enter your coupon..."> 
+            <button class="normal"> Apply </button>
+        </div> 
+    </div>
+
+    <div id="subtotal">  <!-- totales-->
+        <h3> Cart totals </h3>
+        <table> 
+            <tr>  <!-- Table row -->
+                <td> Cart subtotal </td> <!-- Table data-->
+                <td> $335 </td>
+            </tr>
+
+            <tr> <!-- Table row -->
+                <td> Shipping </td>
+                <td> Free </td>
+            </tr>
+
+            <tr> <!-- Table row -->
+                <td> <strong> Total </strong> </td>
+                <td> <strong> $335 </strong>  </td>
+            </tr>
+        </table>
+
+        <button class="normal"> Proceed to check out </button>    
+
+    </div>
+
+
+</section>
+<!-- Add coupon ends-->
+
+
+
+
+<!-- Footer starts-->
+
+<footer class="section-p1">
+
+    <!-- Columna logo / contact /follow -->
+    <div class="col">
+        <img class="logo" src="img/logo.jpg" alt="">
+        <h4>  Contact </h4>
+        <p> <strong> Address: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt. </p>
+        <p> <strong> Hours: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt. </p>
+        <p> <strong> Phone: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt. </p>
+
+        <div class="follow">
+            <h4>Follow us</h4>
+
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Columna About -->
+    <div class="col">
+        <h4> About </h4>
+        <a  href="#" > About us </a> 
+        <a  href="#" > Delovery information </a> 
+        <a  href="#" > Privacy policy </a> 
+        <a  href="#" > Terms & Conditions </a> 
+        <a  href="#" > Contact us </a> 
+    </div>
+
+    <!-- Columna My account -->
+    <div class="col">
+        <h4> My account </h4>
+        <a  href="#" > Sign in </a> 
+        <a  href="#" > View cart </a> 
+        <a  href="#" > Wishlist </a> 
+        <a  href="#" > Track my order</a> 
+        <a  href="#" > Help </a> 
+    </div>
+
+
+        
+    <!-- Columna app -->
+    <div class="col install">
+        <h4> App </h4>
+        <p> From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/appstore.png" alt="">
+            <img src="img/googlestore.jpg" alt="">
+        </div>
+
+        <p> Secured payment gateways</p>
+        <img src="img/pay-icons.png" alt="">
+    </div>
+
+
+    <div class="copyright">
+        <p> Creado por Yair Barnatan | Copyright 2022</p>
+    </div>
+
+</footer>
+
+
+<!-- Footer ends-->
+
+     <!-- importar JS-->
+     <script src="scripts.js"> </script>
+
+</body>
+</html>
